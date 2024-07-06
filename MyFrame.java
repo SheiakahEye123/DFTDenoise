@@ -5,8 +5,8 @@ import java.util.ArrayList;
 
 public class MyFrame extends JFrame {
     MyPanel panel;
-    MyFrame(int xsize, int ysize, ArrayList<Double> X, String title) {
-        panel = new MyPanel(xsize,ysize,X, title);
+    MyFrame(int xsize, int ysize, ArrayList<Double> X, String title, int N) {
+        panel = new MyPanel(xsize,ysize,X, title, N);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(xsize,ysize);
         this.add(panel);
